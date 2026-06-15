@@ -106,4 +106,57 @@ Working Directory
    git commit
        ↓
  Repository History
-``` 
+```
+
+
+- `git config --global user.name "sk7652183-rgb"` – Sets the global Git username.
+- `git config --global user.email "sk7652183@gmail.com"` – Sets the global Git email address.
+
+### Configure Git Username
+
+**Command:**
+
+```bash
+git config --global user.name "sk7652183-rgb"
+```
+
+**Description:**
+
+Sets the global Git username for all repositories on the system.
+
+**Verification:**
+
+```bash
+git config --global user.name
+```
+
+**Output:**
+
+```bash
+sk7652183-rgb
+```
+
+### Configure Git Email
+
+**Command:**
+
+```bash
+git config --global user.email "sk7652183@gmail.com"
+```
+
+**Description:**
+
+Sets the global Git email address for all repositories on the system.
+
+**Verification:**
+
+```bash
+git config --global user.email
+```
+
+**Output:**
+
+```bash
+sk7652183@gmail.com
+```
+ 
