@@ -159,4 +159,32 @@ git config --global user.email
 ```bash
 sk7652183@gmail.com
 ```
- 
+- `git log` – Displays the commit history of the repository.
+
+### View Commit History
+
+**Command:**
+
+```bash
+git log
+```
+
+**Example Output:**
+
+```bash
+commit a1b2c3d4e5f678901234567890abcdef12345678
+Author: sk7652183-rgb <sk7652183@gmail.com>
+Date:   Sun Jun 15 22:30:00 2026 +0530
+
+    Add Git commands cheat sheet
+
+commit f6e7d8c9b0a1234567890abcdef1234567890ab
+Author: sk7652183-rgb <sk7652183@gmail.com>
+Date:   Sun Jun 15 21:45:00 2026 +0530
+
+    Initial commit
+```
+
+**Description:**
+
+`git log` shows the history of commits, including the commit ID, author, date, and commit message. 
