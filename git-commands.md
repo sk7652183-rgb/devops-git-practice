@@ -233,6 +233,8 @@ index e965047..4f2b4a1 100644
 **Explanation:**
 - `+New line added` indicates a new line that exists in the working directory but has not yet been staged.
 
+# **Day 23: Git Branching Commands**
+
 
 | Command                                             | Description                                                   |
 | --------------------------------------------------- | ------------------------------------------------------------- |
