@@ -249,4 +249,47 @@ index e965047..4f2b4a1 100644
 | `git log`                                           | Displayed the commit history of the current branch.           |
 | `git switch master`                                 | Switched back to the `master` branch.                         |
 | `git branch -d feature-2`                           | Deleted the unused `feature-2` branch.                        |
+
+
+
+# Day 24 – Advanced Git: Merge, Rebase, Stash & Cherry Pick
+
+## Advanced Git & GitHub Hands-on Summary
+
+| Task                                 | Git Commands Used                                                | Outcome                                                                |
+| ------------------------------------ | ---------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| Create and work on `feature-login`   | `git checkout -b feature-login`, `git add`, `git commit`         | Added login page UI and validation                                     |
+| Merge `feature-login` into `master`  | `git switch master`, `git merge feature-login`                   | Created a merge commit                                                 |
+| Create and work on `feature-signup`  | `git checkout -b feature-signup`, `git commit`                   | Added signup page UI and validation                                    |
+| Add commits directly on `master`     | `git commit`                                                     | Added utility function and application entry point                     |
+| Merge `feature-signup` into `master` | `git merge feature-signup`                                       | Created a merge commit because both branches had new commits           |
+| Create merge conflict                | `git checkout -b feature-conflict`, `git merge feature-conflict` | Generated a merge conflict                                             |
+| Resolve merge conflict               | `git add`, `git commit`                                          | Resolved conflict and completed merge                                  |
+| Create `feature-dashboard`           | `git checkout -b feature-dashboard`, `git commit`                | Added dashboard UI and statistics module                               |
+| Rebase feature branch                | `git rebase master`                                              | Replayed dashboard commits on top of the latest master                 |
+| Create `feature-profile`             | `git checkout -b feature-profile`, `git commit`                  | Added multiple testing-related commits                                 |
+| Squash merge                         | `git merge --squash feature-profile`                             | Combined multiple commits into a single commit                         |
+| Create `feature-settings`            | `git checkout -b feature-settings`, `git commit`                 | Added settings page, save functionality, validation, and theme support |
+| Fast-forward merge                   | `git merge feature-settings`                                     | Maintained a linear commit history without a merge commit              |
+| Stash workflow                       | `git stash`, `git stash list`, `git stash pop`                   | Saved and restored work in progress                                    |
+| Stash with message                   | `git stash push -m "message"`                                    | Created named stashes                                                  |
+| Apply specific stash                 | `git stash apply stash@{n}`                                      | Restored a selected stash without removing it                          |
+| Create `feature-hotfix`              | `git checkout -b feature-hotfix`, `git commit`                   | Added urgent bug fixes                                                 |
+| Cherry-pick commit                   | `git cherry-pick <commit-id>`                                    | Applied a specific commit without merging the entire branch            |
+| Push branches to remote              | `git push origin <branch>`                                       | Uploaded local branches to GitHub                                      |
+| Verify repository sync               | `git fetch`, `git status`, `git branch -vv`                      | Confirmed local and remote repositories are synchronized               |
+
+## Git Concepts Practiced
+
+| Concept            | Description                                             |
+| ------------------ | ------------------------------------------------------- |
+| Branching          | Created and worked on multiple feature branches         |
+| Merge Commit       | Merged diverged branches using a merge commit           |
+| Fast-Forward Merge | Merged a branch without creating a merge commit         |
+| Merge Conflict     | Created and manually resolved merge conflicts           |
+| Rebase             | Replayed commits on top of an updated branch            |
+| Squash Merge       | Combined multiple commits into a single commit          |
+| Stash              | Temporarily saved uncommitted changes                   |
+| Cherry-Pick        | Applied a specific commit from another branch           |
+| Remote Repository  | Pushed changes and verified synchronization with GitHub |
  
