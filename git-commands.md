@@ -292,4 +292,22 @@ index e965047..4f2b4a1 100644
 | Stash              | Temporarily saved uncommitted changes                   |
 | Cherry-Pick        | Applied a specific commit from another branch           |
 | Remote Repository  | Pushed changes and verified synchronization with GitHub |
- 
+
+#  Day 25 – Git Reset vs Revert & Branching Strategies
+
+## Git Reset and Revert Practice
+
+| Task | Description |
+|--------|-------------|
+| Commit D | Created a commit to practice `git reset --soft`. |
+| `git reset --soft HEAD~1` | Removed the commit while keeping changes staged. |
+| Commit E | Recommitted the staged changes. |
+| `git reset --mixed HEAD~1` | Removed the commit while keeping changes in the working directory. |
+| Commit F | Created a commit to practice `git reset --hard`. |
+| `git reset --hard HEAD~1` | Removed the commit and discarded all changes. |
+| Commit X | Created a commit to begin revert practice. |
+| Commit Y | Created a commit to test reverting a middle commit. |
+| Commit Z | Created a commit as the latest change in history. |
+| `git revert Y` | Failed because Git requires a commit hash, not a commit message. |
+| `git revert 8829095` | Successfully reverted Commit Y using its commit hash. |
+| Verification | Confirmed that `git revert` preserves history by creating a new commit. | 
