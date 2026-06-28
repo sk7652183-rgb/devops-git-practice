@@ -37,4 +37,93 @@ This repository is built to simulate real-world DevOps workflows and strengthen 
 
 ---
 
-## 📂 Repository Structure
+
+---
+
+## 📘 Learning Modules
+
+### 🔹 Git Basics
+- git add
+- git commit
+- git status
+- git log
+- git diff
+- git config
+
+---
+
+### 🌿 Branching & Collaboration
+- Create & switch branches
+- Merge workflows
+- Fast-forward merge
+- Resolve merge conflicts
+
+---
+
+### ⚡ Advanced Git Operations
+- Rebase workflows
+- Squash commits
+- Stashing changes
+- Cherry-picking commits
+
+---
+
+### 🔁 Reset vs Revert
+- Soft reset
+- Mixed reset
+- Hard reset
+- Safe revert strategy
+
+---
+
+### 🖥️ GitHub CLI Mastery
+- Repository creation
+- Issue tracking
+- Pull request workflows
+- GitHub Actions monitoring
+- Releases & API usage
+
+---
+
+## 🧪 Workflow Diagram
+
+```mermaid
+flowchart LR
+A[Working Directory] --> B[Staging Area]
+B --> C[Repository]
+C --> D[GitHub Remote]
+
+⚙️ Example Workflow
+
+# Create a file
+echo "Hello Git" > hello.txt
+
+# Stage changes
+git add hello.txt
+
+# Commit changes
+git commit -m "Add hello file"
+
+# Push to GitHub
+git push origin master
+
+🧠 Key Concepts Practiced
+Branch-based development 🌿
+Merge conflict resolution ⚔️
+Commit history management 📜
+Safe rollback strategies 🔄
+Distributed collaboration 🌍
+CI/CD-ready Git workflows 🚀
+
+👨‍💻 Author
+
+Abusufiyan Khan
+🚀 DevOps & Cloud Enthusiast
+🐙 Git | ☁️ Cloud | ⚙️ CI/CD Learner
+
+
+📈 Project Goals
+Build strong Git fundamentals
+Simulate real-world DevOps workflows
+Prepare for CI/CD pipelines
+Improve collaboration skills in teams
